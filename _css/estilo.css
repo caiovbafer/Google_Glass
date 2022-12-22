@@ -1,14 +1,58 @@
 @charset "UTF-8";
+@import url(http://fonts.gloogleapis.com/css?family=Titillium+Web);
+@font-face {
+    font-family: 'FonteLogo';
+    src:"../_fonts/bubblegum-sans-regular.otf"
+};
 
 body {
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5 );
+    padding: 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 50px;
 }
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1000px;
+    top: 70px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagem/glass-logo-peq.jpg") no-repeat 0px 80px;   
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    color:#606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Tittilium Web', sans-serif;
+    font-size: 15px;
+    color:#888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/*Estilo da foto com legenda*/
 
 figure.foto-legenda {
     position: relative;
@@ -35,4 +79,44 @@ figure.foto-legenda figcaption {
 
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+/*Estilo para o menu de navegação*/
+
+nav#menu {
+    display: block;     
+}	
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: #dddddd;		
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu:hover li {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}		
+
+nav#menu a {
+    color:  #000000;
+    text-decoration: none;
+}
+
+nav#menu:hover a {
+    color: #ffffff;
+    text-decoration: underline;
 }
